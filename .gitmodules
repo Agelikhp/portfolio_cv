@@ -1,0 +1,3 @@
+[submodule "amygdala"]
+    path = amygdala
+    url = https://github.com/Agelikhp/amygdala.git
