@@ -1,48 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game</title>
+    <title>Amygdala Hijack 🧠</title>
     <link rel="stylesheet" href="./game.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="./index.html"><h3>Angeliki Papageorgiou <br>Visual Artist</h3></a>
-      </header>
-
-        <h1>Game</h1>
+        <a href="./index.html"><h3>Angeliki Papageorgiou <br>Visual Artist<br>૮꒰˶ᵔ ᵕ ᵔ˶꒱ა</h3></a>
     </header>
+ 
     <nav>
         <ul>
-            <li>
-                <a href="bio.html">Bio</a>
-            </li>
-            <li>
-                <a href="projects.html">Projects</a>
-            </li>
-        
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-          
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="projects.html">Projects</a></li>
         </ul>
-    <main>
+    </nav>
 
-  
-  <section class="new-project">
-           <h3><a href="./amygdala/amygdalaHijack/index.html">Play Amygdala Hijack Adventure!</a></h3>
+    <div class="container">
+        ˚∧＿∧  　+      <br> 
+        (  •‿• )つ  <br>
+        (つ　 <br>
+         ｜　_つ<br>
+        `し´
+    
+        <section class="new-project">
+            <h3><a href="./amygdala/index.html" class="new-project-link">Play Amygdala Hijack Adventure!</a></h3>
+            <br>
+            <p>Amygdala Hijack Adventure is an ongoing project that aims to explore themes of emotional response and decision-making through interactive gameplay...</p>
+            <p>This project seeks to challenge players to confront their fears and anxieties in a safe space, encouraging them to reflect on their own emotional journeys...
+                Sound Design: soundtracks of old memories, messed up, not in order, traumatic expreriences, party, overwelming experieces.... etc !!!!
+            </p>
+            <p>Programming Languages used: HTML, CSS, JScript.</p>
+        </section>  
+      
+    </div>
 
-        <p>Amygdala Hijack Adventure is an upcoming project that aims to explore themes of emotional response and decision-making through interactive gameplay. Players will navigate a world where their choices affect not only the environment but also their character's emotional state.<br>
-       <p>This project seeks to challenge players to confront their fears and anxieties in a safe space, encouraging them to reflect on their own emotional journeys. Through engaging storytelling and innovative gameplay mechanics, Amygdala Hijack Adventure aims to create a unique gaming experience that combines entertainment with personal growth.</p>
-
-            </section>
-
-    </main>
-
+    <!-- Footer -->
     <footer>
         <p>© Copyright 2024 by Angeliki Papageorgiou. All rights reserved.</p>
     </footer>
+
+     <!-- Audio elements for sound effects -->
+     <audio id="hover-sound">
+        <source src="./sound/interface-soft-click-131438.mp3" type="audio/mpeg">
+     </audio> 
+     <audio id="click-sound">
+        <source src="./sound/90s-game-ui-6-185099.mp3" type="audio/mpeg">
+     </audio>
+
+     <!-- Script for sound effects -->
+     <script>
+        // Select all menu items and header link
+        const menuItems = document.querySelectorAll('nav a'); 
+        const headerLink = document.querySelector('header a'); // Select header link
+        const newProjectLink = document.querySelector('.new-project-link'); // Select new project link
+
+        // Function to play hover sound
+        function playHoverSound() {
+            const hoverSound = document.getElementById('hover-sound');
+            hoverSound.currentTime = 0; // Reset sound to start
+            hoverSound.play().catch(error => console.log("Hover sound playback failed:", error));
+        }
+
+        // Function to play click sound and navigate
+        function playClickSound(event) {
+            const clickSound = document.getElementById('click-sound');
+            clickSound.currentTime = 0; // Reset sound to start
+            clickSound.play().catch(error => console.log("Click sound playback failed:", error));
+
+            // Check if the link is external or internal
+            const isExternalLink = event.target.href.startsWith("http");
+
+            // Optional delay before navigating
+            setTimeout(() => {
+                if (isExternalLink) {
+                    window.open(event.target.href, '_blank'); // Open external link in a new tab
+                } else {
+                    window.location.href = event.target.href; // Navigate directly for internal links
+                }
+            }, 300); 
+
+            event.preventDefault(); // Prevent immediate navigation until sound plays
+        }
+
+        // Add event listeners for mouseover and click on menu items
+        menuItems.forEach(item => {
+            item.addEventListener('mouseover', playHoverSound);
+            item.addEventListener('click', playClickSound);
+        });
+
+        // Add event listeners for mouseover and click on header link
+        headerLink.addEventListener('mouseover', playHoverSound);
+        headerLink.addEventListener('click', playClickSound);
+
+        // Add event listeners for mouseover and click on new project link
+        newProjectLink.addEventListener('mouseover', playHoverSound);
+        newProjectLink.addEventListener('click', playClickSound);
+     </script>
 
 </body>
 </html>

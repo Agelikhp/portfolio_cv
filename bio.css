@@ -1,13 +1,31 @@
-body {
-    font-family: "Constantia", "Georgia", serif; /* Ensure consistent font */
-    background-color: #f8f8f8; /* Light background color for contrast */
+html, body {
+    height: 100%; /* Ensure full height */
     margin: 0; /* Remove default margin */
-    padding: 20px; /* Padding around the body */
+}
+
+body {
+    font-family: "Roboto", sans-serif; /* Use Google Font */
+    background-color: white; /* Set the body background to white */
+    color: black; /* Default text color to black for better contrast */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 50vh; /* Full viewport height */
+}
+
+header {
+    background-color: black; /* Keep header background white */
+    color: white; /* Ensure header text is black */
+    text-align: center;
+    padding: 40px 70px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow for depth */
 }
 
 nav {
-    background-color: #f8f8f8; /* Light background for the nav */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: black; /* Keep nav background black */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow for depth */
 }
 
 nav ul {
@@ -24,107 +42,79 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #333; /* Darker color for better contrast */
-    padding: 10px; /* Padding for clickable area */
+    color: white; /* Text color for links */
+    padding: 15px; /* Padding for clickable area */
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 nav a:hover {
-    background-color: lightseagreen; /* Highlight on hover */
-    color: white; /* Changing text color on hover */
+   background-color: #a7e3e9; /* Darker grey on hover for better visibility */
 }
 
-nav .submenu {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: #fff; /* White background for submenu */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+.container {
+   max-width: 2000px; /* Limit container width */
+   margin: auto; /* Center container */
+   text-align: center; /* Center text inside container */
+   
 }
 
-nav ul li:hover .submenu {
-    display: block; /* Show submenu on hover */
+/* Gallery styling for images in horizontal layout */
+.image-gallery {
+   display: flex; /* Use flexbox to arrange images horizontally */
+   flex-wrap: nowrap; /* Prevent wrapping to keep all images in one line */
+   justify-content: center; /* Center images in the gallery */
+   overflow-x: auto; /* Allow horizontal scrolling if necessary */
 }
 
-nav .submenu a {
-    padding: 10px; /* Padding for submenu items */
+.image-gallery a {
+   margin-right: 10px; /* Space between images */
 }
+
+.image-gallery img {
+   max-width: calc(200px); /* Set max width for images in gallery */
+   height: auto;
+}
+
+/* Styles for headings and paragraphs */
+
 h1 {
-    text-align: center;
-    margin-bottom: 20px; /* Space below the main title */
+   text-align: center;
+   margin-bottom: 20px; /* Space below the main title */
 }
 
 h2 {
-    margin-top: 30px; /* Space above section titles */
-    margin-bottom: 10px; /* Space below section titles */
+   margin-top: 30px; /* Space above section titles */
+   margin-bottom: 10px; /* Space below section titles */
 }
 
 h3 {
-    margin-top: 20px; /* Space above sub-section titles */
-    margin-bottom: 5px; /* Space below sub-section titles */
+   margin-top: 20px; /* Space above sub-section titles */
+   margin-bottom: 5px; /* Space below sub-section titles */
+}
+
+.exhibition-info {
+   font-weight: bold;
+   margin-top: 20px;
+   margin-bottom: 10px;
 }
 
 p {
-    line-height: 1.6; /* Improve readability with line height */
-    margin-bottom: 15px; /* Space below paragraphs */
-}
-nav {
-    background-color: #f8f8f8; /* Light background for the nav */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+   line-height: 1.6; /* Improve readability with line height */
+   margin-bottom: 15px; /* Space below paragraphs */
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px; /* Padding around the menu */
-}
-
-nav ul li {
-    position: relative; /* Positioning for submenu */
-    margin: 0 20px; /* More space between menu items */
-}
-
-nav a {
-    text-decoration: none;
-    color: #333; /* Darker color for better contrast */
-    padding: 10px; /* Padding for clickable area */
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-}
-
-nav a:hover {
-    background-color: lightseagreen; /* Highlight on hover */
-    color: white; /* Changing text color on hover */
-}
-
-nav .submenu {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: #fff; /* White background for submenu */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
-}
-
-nav ul li:hover .submenu {
-    display: block; /* Show submenu on hover */
-}
-
-nav .submenu a {
-    padding: 10px; /* Padding for submenu items */
-}
-
+/* Footer styling */
 
 footer {
-    text-align: center;
-    padding: 10px;
-    margin-top: 40px; /* Space above footer */
+   background-color: black;
+   color: white; /* Footer text color */
+   text-align: center;
+   padding: 10px;
 }
 
 /* Responsive Design */
+
 @media (max-width: 600px) {
     body {
         padding: 10px; /* Reduce padding on smaller screens */
@@ -133,4 +123,15 @@ footer {
     h1, h2, h3 {
         font-size: smaller; /* Adjust font size for smaller screens */
     }
+}
+
+/* Lightbox styles can also be included here if needed */
+/* See previous examples for lightbox styles */
+
+.arrow {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   color: white;
+   font-size: 30px;
 }

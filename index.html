@@ -3,35 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Angeliki Papageorgiou</title>
+    <title>Angeliki Papageorgiou</title>
     <link rel="stylesheet" href="./myweb.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-       <h1>Angeliki Papageorgiou</h1>
-        <h2>Visual Artist</h2>
-    </header>
+    <div class="container">
+        <header>
+            <h3>Angeliki Papageorgiou</h3>
+            <h5>Visual Artist <br> Athens, Greece based</h5>
+            <p>( ＾◡＾)っ</p> 
+        </header>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="bio.html">Bio</a>
-            </li>
-            <li>
-                <a href="projects.html">Projects</a>
-            </li>
-            <li> 
-                <a href="game.html">Game
-                
-                </a>         
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-          
-        </ul>
-    </nav>
-    </body>
+        <nav>
+            <ul>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="game.html">👾 Game 🧠</a></li>
+            </ul>
+        </nav>
 
-   <footer>©Copyright 2024 by Angeliki Papageorgiou. All rights reserved.</footer>
+        <!-- Main content area -->
+        <div class="main-content">
+            <p><img src="./pictures/portait.jpg" alt=""></p>
+            <p><a href="http://">*Introduction Video*</a></p>
+
+            <div class="social-links">
+                <a href="mailto:agelikhpap@gmail.com">email me</a>
+                <a href="https://www.linkedin.com/in/angelikh-papageorgiou/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Agelikhp" target="_blank">GitHub</a>
+                <a href="https://angelikipapageorgiou.tumblr.com/" target="_blank">Tumblr</a>
+            </div>
+        </div>
+
+        <!-- Audio elements for sound effects -->
+        <audio id="hover-sound">
+            <source src="./sound/interface-soft-click-131438.mp3" type="audio/mpeg">
+        </audio> 
+        <audio id="click-sound">
+            <source src="./sound/90s-game-ui-6-185099.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <footer>©Copyright 2024 by Angeliki Papageorgiou. All rights reserved.</footer>
+    </div>
+
+    <script>
+        // Select all menu items
+        const menuItems = document.querySelectorAll('nav a', 'nav submenu','solial-links'); 
+        
+        // Function to play hover sound
+        function playHoverSound() {
+            const hoverSound = document.getElementById('hover-sound');
+            hoverSound.currentTime = 0; // Reset sound to start
+            hoverSound.play().catch(error => console.log("Hover sound playback failed:", error));
+        }
+
+        // Function to play click sound and navigate
+        function playClickSound(event) {
+            const clickSound = document.getElementById('click-sound');
+            clickSound.currentTime = 0; // Reset sound to start
+            clickSound.play().catch(error => console.log("Click sound playback failed:", error));
+            
+            setTimeout(() => {
+                window.location.href = event.target.href; // Navigate to the link
+            }, 300); 
+            
+            event.preventDefault(); 
+        }
+
+        // Add event listeners for mouseover and click
+        menuItems.forEach(item => {
+            item.addEventListener('mouseover', playHoverSound);
+            item.addEventListener('click', playClickSound);
+        });
+    </script>
+</body>
+</html>

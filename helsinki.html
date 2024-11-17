@@ -3,60 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sculptural instruments & Sound art exhibition
-    </title>
     <title>Sculptural Instruments - Sound Art Exhibition</title>
     <link rel="stylesheet" href="./helsinki.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<header>
-    <a href="./index.html"><h3>Angeliki Papageorgiou <br>Visual Artist</h3></a>
- 
- </header>
-<nav>
-    <ul>
-        <li>
-            <a href="bio.html">Bio</a>
-        </li>
-        <li>
-            <a href="projects.html">Projects</a>
-        </li>
-        <li> 
-            <a href="game.html">Games</a>         
-        </li>
-        <li>
-            <a href="contact.html">Contact</a>
-        </li>
-      
-    </ul>
-</nav>
 <body>
-<br>
-<h3>"Sculptural instruments & Sound art exhibition"<br></h3>
+    <header>
+        <a href="./index.html"><h3>Angeliki Papageorgiou <br>Visual Artist</h3></a>
+    </header>
 
+    <nav>
+        <ul>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="game.html">👾 Game 🧠</a></li>
+        </ul>
+    </nav>
 
-    <img src="./pictures/hel1.JPG" alt=""> <br>
-    <img src="./pictures/hel3.JPG" alt=""> <br>
-    <img src="./pictures/welding.JPG" alt=""><br>
-    <img src="./pictures/hel5.JPG" alt="">
-    <p><h3>Väre, Aalto University, Helsinki, Finland - November 2018</h3></p>
-        <br>
-        <p>
-           <strong>Description:</strong>The exhibition featured works from students of the Sonic Sculpture workshop at Aalto University of Arts, Design and Architecture.
+    <div class="container">
+        <img src="./pictures/helsinkiexhibition.jpg" alt="Helsinki Exhibition" class="exhibition-image">
+        <h3>"Sculptural instruments & Sound art exhibition"</h3>
+
+        <!-- Gallery Section with Lightbox -->
+        <div class="image-gallery">
+            <a href="./pictures/hel1.JPG" class="lightbox">
+                <img src="./pictures/hel1.JPG" alt="">
+            </a>
+            <a href="./pictures/hel3.JPG" class="lightbox">
+                <img src="./pictures/hel3.JPG" alt="">
+            </a>
+            <a href="./pictures/welding.JPG" class="lightbox">
+                <img src="./pictures/welding.JPG" alt="">
+            </a>
+            <a href="./pictures/hel5.JPG" class="lightbox">
+                <img src="./pictures/hel5.JPG" alt="">
+            </a>
+        </div>
+
+        <p class="exhibition-info"><strong>Väre, Otakaari 14 Espoo, Aalto University, Helsinki Finland - November 2018</strong></p>
+
+        <p><strong>Description:</strong> The exhibition featured works from students of the Sonic Sculpture workshop at Aalto University of Arts, Design and Architecture. The works ranged from experimental instruments to various combinations of materials and forms creating sound. Experimental design and construction led to unique sculptural instruments. Participating artists included Angeliki Papageorgiou, Antton Nuotio, Fanny Skröder, Filips Staņislavskis, Francisco Antã, Frans Nybacka, Roee Cohen, Sirja Moberg, and Tuomas Lehtomaa.</p>
+
+        <p>My project for the "Sculptural Instruments & Sound Art Exhibition" at Aalto University in November 2018 showcased a unique blend of art and technology, exploring the auditory experience of metal surfaces. The installation was constructed primarily from metal and wood, utilizing welding techniques to create a robust structure. The choice of wood was integral for the internal mechanism, which facilitated the interaction between the audience and the artwork.</p>
+        <p>This experience familiarized me with woodworking tools and machinery that I had never used before, including large machines and welding equipment. I am grateful to Aalto University for providing this opportunity to expand my skill set in constructing artworks.</p>
+
+        <strong>Key Features of my Project:</strong>
+        
+            <p><strong>Sensors:</strong> Strategically placed to detect the presence of passersby, triggering the installation to play a melody.</p>
+            <p><strong>Sound Production:</strong> The melody produced emerged from the act of scratching the metal surface, introducing an intriguing contrast between sound and beauty.</p>
+            <p><strong>Conceptual Exploration:</strong> Examined themes of discomfort and surprise, transforming potentially bothersome sounds into melodic experiences.</p>
+            <p>Dimensions: 1.25cm x 2.00cm, materials: metal, wood, Arduino Software & Hardware.</p>
+
+            <p>Through this project, I not only developed my artistic vision but also gained practical experience in construction techniques that enhanced my creative practice.</p>
+    </div>
+        <!-- Audio elements for sound effects -->
+        <audio id="hover-sound">
+            <source src="./sound/interface-soft-click-131438.mp3" type="audio/mpeg">
+        </audio> 
+        <audio id="click-sound">
+            <source src="./sound/90s-game-ui-6-185099.mp3" type="audio/mpeg">
+        </audio>
+
+    <!-- Lightbox Script -->
+    <script>
+    document.querySelectorAll('.lightbox').forEach((item, index) => {
+        item.addEventListener('click', event => {
+            event.preventDefault(); // Prevent default anchor click behavior
+            const imgSrc = item.getAttribute('href'); // Get the image source
+            const lightbox = document.createElement('div'); // Create lightbox element
+            lightbox.classList.add('lightbox-overlay');
             
-            My project for the "Sculptural Instruments & Sound Art Exhibition" at Aalto University in November 2018 showcased a unique blend of art and technology, exploring the auditory experience of metal surfaces.The installation was constructed primarily from metal and wood, utilizing welding techniques to create a robust structure. The choice of wood was integral for the internal mechanism, which facilitated the interaction between the audience and the artwork.
-            <br>
-           <strong> Key Features of my Project: <br>
+            const img = document.createElement('img'); // Create image element
+            img.src = imgSrc; // Set source to clicked image
+            lightbox.appendChild(img); // Append image to lightbox
             
-            Sensors:</strong> These were strategically placed to detect the presence of passersby, triggering the installation to play a melody. This interactivity emphasized the relationship between the viewer and the artwork, inviting spontaneous engagement. <br>
-            <strong>Sound Production:</strong> The melody produced was not conventional; it emerged from the act of scratching the metal surface. This element introduced an intriguing contrast between the potentially jarring sound of metal scratching and the unexpected beauty of the resulting melody. <br>
-            <strong>Conceptual Exploration:</strong> My project examined themes of discomfort and surprise, as the scratching sound could initially be perceived as bothersome. However, it transformed into a melodic experience, highlighting randomness and experimentation in sound art.
-            By combining these materials and methods, my work not only engaged with sensory experiences but also challenged perceptions of beauty in sound.
-             <br>
-<p>
-            1.25cm x 2.00 cm, metal, wood, arduino sensors.</p>
+            // Create navigation arrows
+            const leftArrow = document.createElement('div');
+            leftArrow.classList.add('arrow', 'left-arrow');
+            leftArrow.innerHTML = '&lt;'; // Left arrow character
+            
+            const rightArrow = document.createElement('div');
+            rightArrow.classList.add('arrow', 'right-arrow');
+            rightArrow.innerHTML = '&gt;'; // Right arrow character
+            
+            lightbox.appendChild(leftArrow);
+            lightbox.appendChild(rightArrow);
+            
+            // Close lightbox on click
+            lightbox.addEventListener('click', (e) => {
+                if (e.target !== leftArrow && e.target !== rightArrow) {
+                    document.body.removeChild(lightbox); // Remove lightbox from DOM
+                    window.removeEventListener('keydown', handleKeydown); // Remove keyboard events when closing
+                }
+            });
+            
+            document.body.appendChild(lightbox); // Append lightbox to body
 
-    </body>
+            let currentIndex = index; // Store current image index
+
+            function updateImage() {
+                img.src = document.querySelectorAll('.lightbox')[currentIndex].getAttribute('href'); 
+                img.alt = document.querySelectorAll('.lightbox')[currentIndex].querySelector('img').alt;
+            }
+
+            leftArrow.addEventListener('click', (e) => {
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : document.querySelectorAll('.lightbox').length - 1;
+                updateImage();
+                e.stopPropagation(); 
+            });
+
+            rightArrow.addEventListener('click', (e) => {
+                currentIndex = (currentIndex + 1) % document.querySelectorAll('.lightbox').length;
+                updateImage();
+                e.stopPropagation(); 
+            });
+
+           function handleKeydown(e) {
+               if (e.key === 'Escape') { 
+                   document.body.removeChild(lightbox);
+                   window.removeEventListener('keydown', handleKeydown);
+               } else if (e.key === 'ArrowLeft') { 
+                   currentIndex = (currentIndex > 0) ? currentIndex - 1 : document.querySelectorAll('.lightbox').length - 1;
+                   updateImage();
+               } else if (e.key === 'ArrowRight') { 
+                   currentIndex = (currentIndex + 1) % document.querySelectorAll('.lightbox').length;
+                   updateImage();
+               }
+           }
+
+           window.addEventListener('keydown', handleKeydown); 
+       });
+   });
+   <!-- Script for sound effects -->
+
+         // Select all menu items and header link
+         const menuItems = document.querySelectorAll('nav a'); 
+         const headerLink = document.querySelector('.header-link'); // Select header link
+
+         // Function to play hover sound
+         function playHoverSound() {
+             const hoverSound = document.getElementById('hover-sound');
+             hoverSound.currentTime = 0; // Reset sound to start
+             hoverSound.play().catch(error => console.log("Hover sound playback failed:", error));
+         }
+
+         // Function to play click sound and navigate
+         function playClickSound(event) {
+             const clickSound = document.getElementById('click-sound');
+             clickSound.currentTime = 0; // Reset sound to start
+             clickSound.play().catch(error => console.log("Click sound playback failed:", error));
+
+             // Check if the link is external or internal
+             const isExternalLink = event.target.href.startsWith("http");
+
+             // Optional delay before navigating
+             setTimeout(() => {
+                 if (isExternalLink) {
+                     window.open(event.target.href, '_blank'); // Open external link in a new tab
+                 } else {
+                     window.location.href = event.target.href; // Navigate directly for internal links
+                 }
+             }, 300); 
+
+             event.preventDefault(); // Prevent immediate navigation
+         }
+
+         // Add event listeners for mouseover and click on menu items
+         menuItems.forEach(item => {
+             item.addEventListener('mouseover', playHoverSound);
+             item.addEventListener('click', playClickSound);
+         });
+
+         // Add event listeners for mouseover and click on header link
+         headerLink.addEventListener('mouseover', playHoverSound);
+         headerLink.addEventListener('click', playClickSound);
+     
+   </script>
+
+    <!-- Footer -->
     <footer>
         <p>© Copyright 2024 by Angeliki Papageorgiou. All rights reserved.</p>
     </footer>
-        </html>
+
+    <!-- Lightbox Styles -->
+    <style>
+    .lightbox-overlay {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, 0.8);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       z-index: 1000; /* Ensure it is above other elements */
+    }
+
+    .lightbox-overlay img {
+       max-width: 90%;
+       max-height: 90%;
+    }
+
+    .arrow {
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       color: white;
+       font-size: 30px;
+       cursor: pointer;
+       z-index: 1100; /* Ensure arrows are above overlay */
+    }
+
+    .left-arrow {
+       left: 20px; /* Position left arrow */
+    }
+
+    .right-arrow {
+       right: 20px; /* Position right arrow */
+    }
+    </style>
+
+</body>
+</html>

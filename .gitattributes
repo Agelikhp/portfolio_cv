@@ -3,3 +3,4 @@ pictures/IMG_3645.jpg filter=lfs diff=lfs merge=lfs -text
 pictures/ard.jpg filter=lfs diff=lfs merge=lfs -text
 pictures/ard1.jpg filter=lfs diff=lfs merge=lfs -text
 pictures/wdalogo.jpg filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text

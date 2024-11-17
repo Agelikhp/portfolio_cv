@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Athens Video Dance Project</title>
     <link rel="stylesheet" href="./avdf.css"> 
+    
 </head>
 <header>
     <a href="./index.html"><h3>Angeliki Papageorgiou <br>Visual Artist</h3></a>
@@ -20,33 +21,80 @@
                 <a href="projects.html">Projects</a>
             </li>
             <li> 
-                <a href="game.html">Games</a>         
+                <a href="game.html">👾 Game 🧠</a>         
             </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
+        
           
         </ul>
     </nav>
-
-    <div class="container">
-        <h3>"US-and-THE OTHERS" - ATHENS VIDEO DANCE PROJECT</h3>
-        <img src="./pictures/avdf1.jpg" alt="Description of the image" width="300" height="200">
+        
+<div class="main-content">
+    <h3>"US - and - THE OTHERS" - ATHENS VIDEO DANCE PROJECT</h3>
+    <img src="./pictures/avdf1.jpg" alt="Description of the image" width="300" height="200">
         <img src="./pictures/avdf.jpg" alt="Description of the image" width="300" height="200">
         <img src="./pictures/avdf3.jpg" alt="Description of the image" width="300" height="200">
-
-        <p>Athens School of Fine Arts, Athens April 2017.
-        <br>Role: Sound Designer - Performer</p>
+        <p>Athens School of Fine Arts, Athens Greece April 2017.
+           <br> <a href="https://www.athensvideodanceproject.gr/" target="_blank">AVD Project</a>
+        <br><strong>Role:</strong> Sound Designer - Performer</p>
         <p>
-            Participated as both a sound designer and performer in "US-and-THE OTHERS," a project exploring themes of otherness and diversity. I created sound effects and managed the overall sound design, enhancing the audience's experience during screenings of dance films and lectures by artists and social science experts. This dual role allowed me to engage creatively with complex social issues while contributing to a collaborative artistic environment.
+            Participating as both a sound designer and performer in "US-and-THE OTHERS," I engaged with themes of otherness and diversity through a multifaceted artistic lens. In this project, I was responsible for creating sound effects and managing the overall sound design, which significantly enhanced the audience's experience during screenings of dance films and lectures by artists and social science experts. My role involved not only crafting an auditory landscape that complemented the visual elements but also ensuring that the sound design resonated with the complex social issues being discussed. This dual involvement allowed me to creatively explore these themes while contributing to a collaborative environment that fostered dialogue among artists and experts alike. By integrating sound with movement and spoken word, I aimed to create an immersive experience that highlighted the nuances of diversity and the concept of "otherness." This project exemplified how sound can serve as a powerful tool for storytelling, enriching the audience's understanding of the material presented and inviting them to reflect on their own perspectives within a broader societal context.
             <br>
 
-           
-<a href="https://youtu.be/FGhQ1HR0LfY">Click here for the video performance</a>
-            
+            <div class="link">         
+                <a href="https://youtu.be/FGhQ1HR0LfY" target="_blank">Watch the video performance here</a>
+            </div>   
+        </div>      
 </body>
+     <!-- Audio elements for sound effects -->
+     <audio id="hover-sound">
+        <source src="./sound/interface-soft-click-131438.mp3" type="audio/mpeg">
+    </audio> 
+    <audio id="click-sound">
+        <source src="./sound/90s-game-ui-6-185099.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
 
  <footer>
+    <script>
+        // Select all menu items and link items
+        const menuItems = document.querySelectorAll('nav a'); 
+        const linkItems = document.querySelectorAll('.link a'); // Select links in .link class
+        
+        // Function to play hover sound
+        function playHoverSound() {
+            const hoverSound = document.getElementById('hover-sound');
+            hoverSound.currentTime = 0; // Reset sound to start
+            hoverSound.play().catch(error => console.log("Hover sound playback failed:", error));
+        }
+    
+        // Function to play click sound and navigate
+        function playClickSound(event) {
+            const clickSound = document.getElementById('click-sound');
+            clickSound.currentTime = 0; // Reset sound to start
+            clickSound.play().catch(error => console.log("Click sound playback failed:", error));
+            
+            // Optional delay before navigating (if needed)
+            setTimeout(() => {
+                window.open(event.target.href, '_blank'); // Open link in a new tab
+            }, 300); 
+            
+            event.preventDefault(); // Prevent immediate navigation
+        }
+    
+        // Add event listeners for mouseover and click on menu items
+        menuItems.forEach(item => {
+            item.addEventListener('mouseover', playHoverSound);
+            item.addEventListener('click', playClickSound);
+        });
+    
+        // Add event listeners for mouseover and click on link items
+        linkItems.forEach(item => {
+            item.addEventListener('mouseover', playHoverSound);
+            item.addEventListener('click', playClickSound);
+        });
+    </script>
+
 <p>© Copyright 2024 by Angeliki Papageorgiou. All rights reserved.</p>
  </footer>
 </html>

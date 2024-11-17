@@ -1,17 +1,31 @@
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0; /* Remove default margin */
+}
+
 body {
-    margin: 0;
-    font-family: "Constantia", "Georgia", serif; /* Setting Constantia as the primary font */
-    background-color: white;
+    font-family: "Roboto", sans-serif; /* Use Google Font */
+    background-color: black; /* Set the body background to black */
+    color: white; /* Default text color to white for better contrast */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Full viewport height */
 }
 
 header {
+    background-color: black; /* Keep header background black */
+    color: white; /* Ensure header text is white */
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow for depth */
 }
 
 nav {
-    background-color: #f8f8f8; /* Light background for the nav */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: black; /* Keep nav background black */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow for depth */
 }
 
 nav ul {
@@ -28,24 +42,28 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #333; /* Darker color for better contrast */
-    padding: 10px; /* Padding for clickable area */
+    color: white; /* Text color for links */
+    padding: 15px; /* Padding for clickable area */
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 nav a:hover {
-    background-color: lightseagreen; /* Highlight on hover */
-    color: white; /* Changing text color on hover */
+    background-color: #a7e3e9; /* Darker grey on hover for better visibility */
 }
+
 
 nav .submenu {
     display: none;
     position: absolute;
     left: 0;
     top: 100%;
-    background-color: #fff; /* White background for submenu */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    background-color: #333; /* Darker background for submenu */
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2); /* Light shadow effect */
+}
+
+nav ul li:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 nav ul li:hover .submenu {
@@ -56,27 +74,38 @@ nav .submenu a {
     padding: 10px; /* Padding for submenu items */
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+/* Main content area styling (optional) */
+.main-content {
+   flex-grow: 1; /* Allow this section to grow and fill space between header and footer */
+   padding-bottom: 60px; /* Space for footer height if using absolute positioning method */
+   display: flex;
+   flex-direction: column; /* Stack elements vertically */
+   align-items: center; /* Center items horizontally in main content area */
+   justify-content: center; /* Center items vertically in main content area */
+   min-height: calc(100vh - (160px + 60px)); /* Full viewport height minus header and footer heights */ 
+
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
+/* Image styling for project section */
+.project-image {
+    width: 10px; /* Set desired width for the image (adjust as needed) */
+    height: auto; /* Maintain aspect ratio by setting height to auto */
+    margin-bottom: 20px; /* Space below the image (adjust as needed) */
+    border-radius: 15px;
+ }
+
+/* Social links styling to center them properly */
+.social-links {
+   display: flex;
+   flex-direction:row;
+   align-items: center; /* Center links horizontally in the social links section */
+   gap: 10px; /* Space between the links */
 }
-.project-container {
-    display: flex;
-    flex-direction: column; /* Stacking projects vertically */
-    align-items: center; /* Centering projects horizontally */
-    margin-top: 20px; /* Adding top margin for spacing */
- }
- 
- .project {
-    margin-bottom: 20px; /* Space between projects */
-    text-align: center; /* Centering text inside each project */
- }
- 
- .project h3 {
-    margin-bottom: 5px; /* Space between title and description */
- }
+
+/* Footer styling */
+footer {
+   background-color: black; /* Footer background color */
+   color: white; /* Footer text color */
+   text-align: center;
+   padding: 10px;
+}

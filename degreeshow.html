@@ -4,67 +4,238 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Degree Show</title>
-    <link rel="stylesheet" href="./degreeshow.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="./degreeshow.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <header>
     <a href="./index.html"><h3>Angeliki Papageorgiou <br>Visual Artist</h3></a>
-  </header>
-
-<nav>
-    <ul>
-        <li>
-            <a href="bio.html">Bio</a>
-        </li>
-        <li>
-            <a href="projects.html">Projects</a>
-        </li>
-        <li> 
-            <a href="game.html">Games</a>         
-        </li>
-        <li>
-            <a href="contact.html">Contact</a>
-        </li>
-      
-    </ul>
-</nav>
-
+</header>
 <body>
+   <nav>
+        <ul>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="game.html">👾 Game 🧠</a></li>
+            
+        </ul>
+    </nav>
 
     <div class="container">
         <h3>“When you soften, when you open. That’s when the light can enter”</h3>
-        <img src="./pictures/logo.jpg" alt="Description of the image" width="300" height="200">
-       <br> <strong>Athens, June 2022</strong>
-        <p>
-            Within the framework of the annual exposition of the Fine Arts School in Athens GR, I presented my series of works with the title <strong>“When you soften, when you open. That’s when the light can enter”.</strong>
-        </p>
-        <img src="./pictures/cave.jpg" alt="Description of the image" width="300" height="200">
-        <p>
-            <strong>Description: </strong> This degree show at the Athens School of Fine Arts delved into the themes of vulnerability and resilience through a series of large-scale paintings and interactive installations. The project invites viewers to explore the notion that some moments feel more real than others, serving as an invisible portal to their deepest desires and emotions. It creates a narrative space of personal mythology, encouraging reflection and connection.
-        </p>
-        <p>
-            <strong>Process:</strong> I initiated the project with conceptual sketches that emphasized the interplay of light and shadow, developing the paintings using mixed media techniques. The process involved experimenting with various materials to evoke emotional responses, and I documented each stage to capture the evolution of my ideas.
-        </p>
-        <p>
-            <strong>Outcome: </strong> The exhibition was met with positive feedback for its immersive experience, successfully engaging viewers on an emotional level. Attendees appreciated the innovative use of space and interactivity, which enhanced their connection to the artwork. The project was recognized for its ability to provoke thought and inspire dialogue about personal experiences and collective memory.
-        </p>
-        <p>Acrylics on canvas_ 100x150</p>
+        <img src="./pictures/logo.jpg" alt="Description of the image" class="main-image">
+        <strong>Athens School of Fine Arts - Athens, Greece June 2022</strong>
 
-        <img src="./pictures/ai8ousa.jpg" alt="">
-        <img src="./pictures/3paintings.jpg" alt="">
-        <img src="./pictures/ai8ousa2.jpg" alt="">
-        <img src="./pictures/ai8ousa3.jpg" alt="">
-        <img src="./pictures/lightsource.jpg" alt="">
-        <img src="./pictures/deer.JPG" alt="">
-        <img src="./pictures/dantes.jpg" alt="">
-        <img src="./pictures/closeup.JPG" alt="">
-        <img src="./pictures/koi.jpg" alt="">
-        <img src="./pictures/riding.jpg" alt="">
-        <img src="./pictures/roz.jpg" alt="">
-        <img src="./pictures/chilling.jpg" alt="">
+        <p>Within the framework of the annual graduation exposition of the Fine Arts School in Athens, Greece, I presented my series of works with the title <strong>“When you soften, when you open. That’s when the light can enter”.</strong></p>
 
+        <p><strong>Description: </strong>This degree show delved into the themes of vulnerability and resilience through a series of large-scale paintings that i was working on during COVID-19 lockdown. The project invites viewers to explore the notion that some moments feel more real than others, serving as an invisible portal to their deepest desires and emotions. It creates a narrative space of personal mythology, encouraging reflection and connection.</p>
+        
+        <p><strong>Process:</strong> I initiated the project with conceptual sketches that emphasized the interplay of light and shadow, developing the paintings using acrylics. <br> <strong>Dimensions:</strong>  100x150cm <br>
+        <br><strong>Outcome:</strong>The exhibition was met with positive feedback for its immersive experience, successfully engaging viewers on an emotional level. Attendees appreciated the innovative use of space, which enhanced their connection to the artwork. The project was recognized for its ability to provoke thought and inspire dialogue about personal experiences and collective memory.</p>
+
+        <!-- Gallery Section with Lightbox -->
+        <div class="image-gallery">
+            <a href="./pictures/ai8ousa.jpg" class="lightbox">
+                <img src="./pictures/ai8ousa.jpg" alt="">
+            </a>
+            <a href="./pictures/3paintings.jpg" class="lightbox">
+                <img src="./pictures/3paintings.jpg" alt="">
+            </a>
+            <!-- Add more images similarly -->
+            <a href="./pictures/ai8ousa2.jpg" class="lightbox">
+                <img src="./pictures/ai8ousa2.jpg" alt="">
+            </a>
+            <a href="./pictures/ai8ousa3.jpg" class="lightbox">
+                <img src="./pictures/ai8ousa3.jpg" alt="">
+            </a>
+            <a href="./pictures/cave.jpg" class="lightbox">
+                <img src="./pictures/cave.jpg" alt="">
+            </a>
+            <a href="./pictures/lightsource.jpg" class="lightbox">
+                <img src="./pictures/lightsource.jpg" alt="">
+            </a>
+            <a href="./pictures/closeup.jpg" class="lightbox">
+                <img src="./pictures/closeup.jpg" alt="">
+            </a>
+            <a href="./pictures/chilling.jpg" class="lightbox">
+                <img src="./pictures/chilling.jpg" alt="">
+            </a>
+            <a href="./pictures/deer.jpg" class="lightbox">
+                <img src="./pictures/deer.jpg" alt="">
+            </a>
+            <a href="./pictures/dantes.jpg" class="lightbox">
+                <img src="/pictures/dantes.jpg" alt="">
+            </a>
+            <a href="./pictures/koi.jpg" class="lightbox">
+                <img src="/pictures/koi.jpg" alt="">
+            </a>
+            <a href="./pictures/riding.jpg" class="lightbox">
+                <img src="./pictures/riding.jpg" alt="">
+            </a>
+            <a href="./pictures/roz.jpg" class="lightbox">
+                <img src="/pictures/roz.jpg" alt="">
+            </a>
+        </div>
     </div>
+     <!-- Audio elements for sound effects -->
+     <audio id="hover-sound">
+        <source src="./sound/interface-soft-click-131438.mp3" type="audio/mpeg">
+    </audio> 
+    <audio id="click-sound">
+        <source src="./sound/90s-game-ui-6-185099.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Lightbox Script -->
+    <script>
+        document.querySelectorAll('.lightbox').forEach((item, index) => {
+            item.addEventListener('click', event => {
+                event.preventDefault(); // Prevent default anchor click behavior
+                const imgSrc = item.getAttribute('href'); // Get the image source
+                const lightbox = document.createElement('div'); // Create lightbox element
+                lightbox.classList.add('lightbox-overlay');
+                
+                const img = document.createElement('img'); // Create image element
+                img.src = imgSrc; // Set source to clicked image
+                lightbox.appendChild(img); // Append image to lightbox
+                
+                // Create navigation arrows
+                const leftArrow = document.createElement('div');
+                leftArrow.classList.add('arrow', 'left-arrow');
+                leftArrow.innerHTML = '&lt;'; // Left arrow character
+                
+                const rightArrow = document.createElement('div');
+                rightArrow.classList.add('arrow', 'right-arrow');
+                rightArrow.innerHTML = '&gt;'; // Right arrow character
+                
+                lightbox.appendChild(leftArrow);
+                lightbox.appendChild(rightArrow);
+                
+                // Close lightbox on click
+                lightbox.addEventListener('click', (e) => {
+                    if (e.target !== leftArrow && e.target !== rightArrow) {
+                        document.body.removeChild(lightbox); // Remove lightbox from DOM
+                    }
+                });
+                
+                document.body.appendChild(lightbox); // Append lightbox to body
+        
+                let currentIndex = index; // Store current image index
+        
+                function updateImage() {
+                    img.src = document.querySelectorAll('.lightbox')[currentIndex].getAttribute('href'); // Update image source
+                    img.alt = document.querySelectorAll('.lightbox')[currentIndex].querySelector('img').alt; // Update alt text if necessary
+                }
+        
+                leftArrow.addEventListener('click', (e) => {
+                    currentIndex = (currentIndex > 0) ? currentIndex - 1 : document.querySelectorAll('.lightbox').length - 1; // Go to previous image
+                    updateImage();
+                    e.stopPropagation(); // Prevent closing the lightbox
+                });
+        
+                rightArrow.addEventListener('click', (e) => {
+                    currentIndex = (currentIndex + 1) % document.querySelectorAll('.lightbox').length; // Go to next image
+                    updateImage();
+                    e.stopPropagation(); // Prevent closing the lightbox
+                });
+        
+                // Keyboard navigation
+                window.addEventListener('keydown', (e) => {
+                    if (e.key === 'ArrowLeft') { // Left arrow key
+                        currentIndex = (currentIndex > 0) ? currentIndex - 1 : document.querySelectorAll('.lightbox').length - 1; // Go to previous image
+                        updateImage();
+                    } else if (e.key === 'ArrowRight') { // Right arrow key
+                        currentIndex = (currentIndex + 1) % document.querySelectorAll('.lightbox').length; // Go to next image
+                        updateImage();
+                    } else if (e.key === 'Escape') { // Escape key to close the lightbox
+                        document.body.removeChild(lightbox); // Remove lightbox from DOM
+                        window.removeEventListener('keydown', arguments.callee); // Remove this event listener when closing the lightbox
+                    }
+                });
+            });
+        });
+        </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>© Copyright 2024 by Angeliki Papageorgiou. All rights reserved.</p>
+    </footer>
+    <script>
+        // Select all menu items and link items
+        const menuItems = document.querySelectorAll('nav a'); 
+        const linkItems = document.querySelectorAll('.link a'); // Select links in .link class
+        
+        // Function to play hover sound
+        function playHoverSound() {
+            const hoverSound = document.getElementById('hover-sound');
+            hoverSound.currentTime = 0; // Reset sound to start
+            hoverSound.play().catch(error => console.log("Hover sound playback failed:", error));
+        }
+    
+        // Function to play click sound and navigate
+        function playClickSound(event) {
+            const clickSound = document.getElementById('click-sound');
+            clickSound.currentTime = 0; // Reset sound to start
+            clickSound.play().catch(error => console.log("Click sound playback failed:", error));
+            
+            // Optional delay before navigating (if needed)
+            setTimeout(() => {
+                window.open(event.target.href, '_blank'); // Open link in a new tab
+            }, 300); 
+            
+            event.preventDefault(); // Prevent immediate navigation
+        }
+    
+        // Add event listeners for mouseover and click on menu items
+        menuItems.forEach(item => {
+            item.addEventListener('mouseover', playHoverSound);
+            item.addEventListener('click', playClickSound);
+        });
+    
+        // Add event listeners for mouseover and click on link items
+        linkItems.forEach(item => {
+            item.addEventListener('mouseover', playHoverSound);
+            item.addEventListener('click', playClickSound);
+        });
+    </script>
+
+    <!-- Lightbox Styles -->
+    <style>
+    .lightbox-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000; /* Ensure it is above other elements */
+    }
+
+    .lightbox-overlay img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    .arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 1100; /* Ensure arrows are above the overlay */
+    }
+
+    .left-arrow {
+        left: 20px; /* Position left arrow */
+    }
+
+    .right-arrow {
+        right: 20px; /* Position right arrow */
+    }
+    </style>
+
 </body>
-<footer>
-    <p>© Copyright 2024 by Angeliki Papageorgiou. All rights reserved.</p>
-</footer>
 </html>
