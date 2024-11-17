@@ -1,7 +1,3 @@
 [submodule "amygdala"]
     path = amygdala
-    url = https://github.com/Agelikhp/amygdalahijack.git
-
-[submodule "amygdala/amygdalaHijack"]
-    path = amygdala/amygdalaHijack
-    url = <repository-url-for-amygdalaHijack>
+    url = <https://github.com/Agelikhp/amygdalahijack.git>
