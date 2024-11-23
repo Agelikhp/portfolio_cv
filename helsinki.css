@@ -92,8 +92,8 @@ p {
 
 /* Footer styling */
 footer {
-   background-color: black; /* Footer background color */
-   color: white; /* Footer text color */
+   background-color: whitesmoke; /* Footer background color */
+   color: black; /* Footer text color */
    text-align: center;
    padding: 10px;
 }

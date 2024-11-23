@@ -23,19 +23,24 @@ html, body {
     align-items: center; /* Center items horizontally */
     justify-content: center; /* Center items vertically */
     min-height: 100vh; /* Full viewport height */
+    
 }
 
 /* Header styling */
 header {
-    background-color: black; /* Keep header background black */
+    background-color: whitesmoke; /* Keep header background black */
     text-align: center;
+    color: black;
     padding: 20px;
+    font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
 }
 
 /* Navigation styling */
 nav {
-    background-color: black; /* Keep nav background black */
+    background-color: whitesmoke; /* Keep nav background black */
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow for depth */
+    font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
+    color: black;
 }
 
 nav ul {
@@ -43,6 +48,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 10px; /* Padding around the menu */
+    color: black;
 }
 
 nav ul li {
@@ -51,7 +57,7 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: white; /* Text color for links */
+    color: black; /* Text color for links */
     padding: 15px; /* Padding for clickable area */
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
@@ -66,6 +72,7 @@ h1 {
    font-size: 2.5em;
    margin-bottom: 20px;
    text-align: center; /* Center title text */
+   font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
 }
 
 
@@ -77,6 +84,8 @@ h1 {
    padding: 20px;
    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background for contrast */
    border-radius: 10px; /* Rounded corners for project section */
+   
+   
 }
 
 /* Adjusting spacing between paragraphs in new-project section */
@@ -86,10 +95,11 @@ h1 {
 
 /* Footer styling */
 footer {
-    background-color: black; /* Footer background color */
-    color: white; /* Footer text color */
+    background-color: whitesmoke; /* Footer background color */
+    color: black; /* Footer text color */
     text-align: center;
     padding: 40px;
+    font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
  }
 
 /* Responsive Design */

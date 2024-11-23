@@ -5,16 +5,18 @@ body {
     background-color: #f9f9f9; /* Light background color */
 }
 header {
-    background-color: black; /* Keep header background black */
-    color: white; /* Ensure header text is white */
+    background-color: whitesmoke; /* Keep header background black */
+    color: black; /* Ensure header text is white */
     text-align: center;
     padding: 40px 20px;
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow for depth */
+    font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
 }
 
 nav {
-    background-color: #f8f8f8; /* Light background for the nav */
+    background-color: whitesmoke; /* Light background for the nav */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
 }
 
 nav ul {
@@ -88,8 +90,9 @@ p {
 }
 /* Footer styling */
 footer {
-    background-color: black; /* Footer background color */
-    color: white; /* Footer text color */
+    background-color: whitesmoke; /* Footer background color */
+    color: black; /* Footer text color */
     text-align: center;
     padding: 10px;
+    font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
  }
