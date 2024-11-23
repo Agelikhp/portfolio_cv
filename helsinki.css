@@ -10,8 +10,7 @@ header {
    color: black; /* Ensure header text is white */
    text-align: center;
    padding:    40px 60px;
-   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow for depth */
-   
+   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow for depth */ 
    font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
 }
 
