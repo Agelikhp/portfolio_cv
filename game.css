@@ -33,6 +33,7 @@ header {
     color: black;
     padding: 20px;
     font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
+    background-image: url(./amygdala/background.jpg); /* Set your background image here */
 }
 
 /* Navigation styling */
@@ -49,6 +50,7 @@ nav ul {
     justify-content: center;
     padding: 10px; /* Padding around the menu */
     color: black;
+    background-image: url(./amygdala/background.jpg); /* Set your background image here */
 }
 
 nav ul li {
@@ -84,7 +86,7 @@ h1 {
    padding: 20px;
    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background for contrast */
    border-radius: 10px; /* Rounded corners for project section */
-   
+   background-image: url(./amygdala/background.jpg); /* Set your background image here */
    
 }
 
@@ -100,6 +102,7 @@ footer {
     text-align: center;
     padding: 40px;
     font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
+    background-image: url(./amygdala/background.jpg); /* Set your background image here */
  }
 
 /* Responsive Design */

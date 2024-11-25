@@ -7,6 +7,7 @@ body {
     font-family: "Roboto", sans-serif; /* Use Google Font */
     background-color: whitesmoke; /* Set the body background to white */
     color: black; /* Default text color to black for better contrast */
+    padding: 40px;
 }
 
 .container {

@@ -1,7 +1,7 @@
 body {
     font-family: "Roboto", sans-serif; /* Use Google Font */
     margin: 0;
-    padding: 0px; /* Add some padding around the body */
+    padding: 40px; /* Add some padding around the body */
     background-color: #f9f9f9; /* Light background color */
 }
 header {
