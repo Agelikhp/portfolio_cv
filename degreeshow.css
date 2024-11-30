@@ -4,12 +4,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 40px; /* Add some padding around the body */
-    background-color: #f9f9f9; /* Light background color */
+    background-color: gainsboro; /* Light background color */
    
 }
 
 header {
-    background-color: whitesmoke; /* Keep header background black */
+    background-color: gainsboro; /* Keep header background black */
     color: black; /* Ensure header text is white */
     text-align: center;
     padding:    40px 60px;
@@ -18,7 +18,7 @@ header {
 }
 
 nav {
-    background-color: whitesmoke; /* Light background for the nav */
+    background-color: gainsboro; /* Light background for the nav */
     padding: 1px 0px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
@@ -45,7 +45,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #a7e3e9; /* Darker grey on hover for better visibility */
+    background-color: yellow; /* Darker grey on hover for better visibility */
  }
 
 nav .submenu {
@@ -53,7 +53,7 @@ nav .submenu {
     position: absolute;
     left: 0;
     top: 100%;
-    background-color: #333; /* Darker background for submenu */
+    background-color: gainsboro; /* Darker background for submenu */
     box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2); /* Light shadow effect */
 }
 .container {
@@ -92,7 +92,7 @@ nav .submenu {
 
 /* Footer styling */
 footer {
-    background-color: whitesmoke; /* Footer background color */
+    background-color: gainsboro; /* Footer background color */
     color: black; /* Footer text color */
     text-align: center;
     padding: 10px;

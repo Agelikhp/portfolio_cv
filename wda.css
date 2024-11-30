@@ -2,11 +2,11 @@ body {
    font-family: "Roboto", sans-serif; /* Use Google Font */
    margin: 0;
    padding: 40px; /* Add some padding around the body */
-   background-color: #f9f9f9; /* Light background color */
+   background-color: gainsboro; /* Light background color */
 }
 
 header {
-   background-color: whitesmoke; /* Keep header background black */
+   background-color: gainsboro; /* Keep header background black */
    color: black; /* Ensure header text is white */
    text-align: center;
    padding:    40px 60px;
@@ -15,7 +15,7 @@ header {
 }
 
 nav {
-   background-color: whitesmoke; /* Light background for the nav */
+   background-color: gainsboro; /* Light background for the nav */
    padding: 1px 0px;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
    font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
@@ -41,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-   background-color: #a7e3e9; /* Darker grey on hover for better visibility */
+   background-color: yellow; /* Darker grey on hover for better visibility */
 }
 
 .container {
@@ -57,7 +57,7 @@ nav a:hover {
 
 /* Specific styles for featured images */
 .featured-image {
-   width: calc(100% - 40px); /* Make images responsive with some margin */
+   width: calc(100% - 60px); /* Make images responsive with some margin */
    max-width: 600px; /* Set a maximum width for larger screens */
    height: auto; /* Maintain aspect ratio */
    margin-bottom: 20px; /* Space below the image */
@@ -69,6 +69,7 @@ nav a:hover {
    flex-wrap: nowrap; /* Prevent wrapping to keep all images in one line */
    justify-content: center; /* Center images in the gallery */
    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+ 
 }
 
 .image-gallery a {
@@ -95,7 +96,7 @@ p {
 
 /* Footer styling */
 footer {
-   background-color: whitesmoke; /* Footer background color */
+   background-color: gainsboro; /* Footer background color */
    color: black; /* Footer text color */
    text-align: center;
    padding: 10px;

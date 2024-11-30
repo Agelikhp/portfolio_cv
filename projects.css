@@ -11,7 +11,7 @@ html, body {
 
 body {
     font-family: "Roboto", sans-serif; /* Use Google Font */
-    background-color: #f9f9f9; /* Light background color */
+    background-color: gainsboro; /* Light background color */
     color: black; /* Default text color to black for better contrast */
 }
 .container {
@@ -19,13 +19,14 @@ body {
     margin: auto; /* Center container */
     text-align: center; /* Center text inside container */
     padding-top: 30px;
+
     
  }
  
 
 /* Header Styles */
 header {
-    background-color: whitesmoke; /* Keep header background black */
+    background-color: gainsboro; /* Keep header background black */
     color: black; /* Ensure header text is white */
     text-align: center;
     padding: 40px 60px; /* Set padding for header */
@@ -35,7 +36,7 @@ header {
 
 /* Navigation Styles */
 nav {
-    background-color: whitesmoke; /* Keep nav background black */
+    background-color: gainsboro; /* Keep nav background black */
     font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
     color: black;
 }
@@ -63,7 +64,7 @@ nav a {
 }
 
 nav a:hover {
-   background-color: #a7e3e9; /* Change background color on hover for better visibility */
+   background-color: yellow; /* Change background color on hover for better visibility */
    color: black; /* Change text color on hover for contrast */
 }
 
@@ -92,12 +93,12 @@ nav a:hover {
 }
 
 .project-item a:hover {
-    color:  #a7e3e9;;
+    color:  yellow;
 }
 
 /* Footer Styles */
 footer {
-   background-color: whitesmoke; /* Footer background color */
+   background-color: gainsboro; /* Footer background color */
    color: black; /* Footer text color */
    text-align: center;
    padding: 10px; /* Padding for footer content (set to match header) */

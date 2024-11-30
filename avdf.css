@@ -2,10 +2,10 @@ body {
     font-family: "Roboto", sans-serif; /* Use Google Font */
     margin: 0;
     padding: 40px; /* Add some padding around the body */
-    background-color: #f9f9f9; /* Light background color */
+    background-color: gainsboro; /* Light background color */
 }
 header {
-    background-color: whitesmoke; /* Keep header background black */
+    background-color: gainsboro; /* Keep header background black */
     color: black; /* Ensure header text is white */
     text-align: center;
     padding: 40px 20px;
@@ -14,8 +14,7 @@ header {
 }
 
 nav {
-    background-color: whitesmoke; /* Light background for the nav */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: gainsboro; /* Light background for the nav */
     font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
 }
 
@@ -40,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #a7e3e9; /* Darker grey on hover for better visibility */
+    background-color: yellow; /* Darker grey on hover for better visibility */
  }
 
 nav .submenu {
@@ -90,7 +89,7 @@ p {
 }
 /* Footer styling */
 footer {
-    background-color: whitesmoke; /* Footer background color */
+    background-color: gainsboro; /* Footer background color */
     color: black; /* Footer text color */
     text-align: center;
     padding: 10px;

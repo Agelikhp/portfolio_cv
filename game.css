@@ -28,7 +28,7 @@ html, body {
 
 /* Header styling */
 header {
-    background-color: whitesmoke; /* Keep header background black */
+    background-color: gainsboro; /* Keep header background black */
     text-align: center;
     color: black;
     padding: 20px;
@@ -38,7 +38,7 @@ header {
 
 /* Navigation styling */
 nav {
-    background-color: whitesmoke; /* Keep nav background black */
+    background-color: gainsboro; /* Keep nav background black */
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow for depth */
     font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
     color: black;
@@ -66,7 +66,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #a7e3e9; /* Lighter color on hover for better visibility */
+    background-color: yellow; /* Lighter color on hover for better visibility */
 }
 
 /* Main content area styling (for the game section) */

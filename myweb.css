@@ -1,11 +1,12 @@
 html, body {
     height: 100%; /* Ensure full height */
     margin: 0; /* Remove default margin */
+    background-color: blue;
 }
 
 body {
     font-family: "Roboto", sans-serif; /* Use Google Font */
-    background-color: black; /* Set the body background to black */
+    background-color: blue; /* Set the body background to black */
     color: white; /* Default text color to white for better contrast */
 }
 
@@ -18,16 +19,14 @@ body {
 }
 
 header {
-    background-color: black; /* Keep header background black */
-    color: white; /* Ensure header text is white */
+    background-color: blue;    color: yellow; /* Ensure header text is white */
     text-align: center;
     padding: 40px 20px;
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow for depth */
 }
 
 nav {
-    background-color: black; /* Keep nav background black */
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow for depth */
+    background-color: blue;    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow for depth */
 }
 
 nav ul {
@@ -44,14 +43,14 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: white; /* Text color for links */
+    color: yellow; /* Text color for links */
     padding: 15px; /* Padding for clickable area */
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
 }
 
 nav a:hover {
-    background-color: #a7e3e9; /* Darker grey on hover for better visibility */
+    background-color: black; /* Darker grey on hover for better visibility */
 }
 
 
@@ -107,7 +106,7 @@ nav .submenu a {
 /* Footer styling */
 footer {
    background-color: black; /* Footer background color */
-   color: white; /* Footer text color */
+   color: yellow; /* Footer text color */
    text-align: center;
    padding: 10px;
 }

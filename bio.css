@@ -5,7 +5,7 @@ html, body {
 
 body {
     font-family: "Roboto", sans-serif; /* Use Google Font */
-    background-color: whitesmoke; /* Set the body background to white */
+    background-color: gainsboro; /* Set the body background to white */
     color: black; /* Default text color to black for better contrast */
     padding: 40px;
 }
@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background-color: whitesmoke; /* Keep header background white */
+    background-color: gainsboro; /* Keep header background white */
     color: black; /* Ensure header text is black */
     text-align: center;
     padding: 40px 70px;
@@ -26,10 +26,10 @@ header {
 }
 
 nav {
-    background-color: whitesmoke; /* Keep nav background black */
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow for depth */
+    background-color: gainsboro; /* Keep nav background black */
+    box-shadow: 0 2px 5px gainsboro; /* Light shadow for depth */
     font-family: 'Tiny5', sans-serif; /* Apply Tiny5 font */
-    color: black;
+    color: gainsboro;
 
 }
 
@@ -38,6 +38,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 10px; /* Padding around the menu */
+    color: #000;
 }
 
 nav ul li {
@@ -55,7 +56,7 @@ nav a {
 }
 
 nav a:hover {
-   background-color: #a7e3e9; /* Darker grey on hover for better visibility */
+   background-color:yellow; /* Darker grey on hover for better visibility */
 }
 
 .container {
@@ -117,7 +118,7 @@ p {
 /* Footer styling */
 
 footer {
-   background-color: whitesmoke;
+   background-color: gainsboro;
    color: black; /* Footer text color */
    text-align: center;
    padding: 10px;
